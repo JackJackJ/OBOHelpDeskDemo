@@ -413,17 +413,5 @@ crossorigin="anonymous"></script>
    </script>
   </body>
   <script>
-    
-    function walkText(node) {
-  if (node.nodeType == 3) {
-    node.data = node.data.replace(/questions/g, "bar");
-  }
-  if (node.nodeType == 1 && node.nodeName != "SCRIPT") {
-    for (var i = 0; i < node.childNodes.length; i++) {
-      walkText(node.childNodes[i]);
-    }
-  }
-}
-walkText(document.body);
   </script>
 </html>
