@@ -219,7 +219,7 @@ crossorigin="anonymous"></script>
     </div>
     <div class="container-fluid" id = "Resources" style="padding-top: 3%;">
       <h1 style="font-family: 'Fjalla One', sans-serif; font-size: 4vw; text-align: center; padding-bottom: 1%">UPCOMING EVENTS</h1>
-      <div data-tockify-component="calendar" data-tockify-calendar="jack.lee"></div>
+      <div data-tockify-component="calendar" data-tockify-calendar="jack.lee" style="color: white"></div>
       <script data-cfasync="false" data-tockify-script="embed" src="https://public.tockify.com/browser/embed.js"></script>
       
       </div>
@@ -321,6 +321,7 @@ crossorigin="anonymous"></script>
 
 <!-- SCRIPT -->
     <script>
+      document.body.innerHTML = document.body.innerHTML.replace('calendar', '');
       function autocomplete(searchEle, arr) {
          var currentFocus;
          searchEle.addEventListener("input", function(e) {
